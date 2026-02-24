@@ -1,12 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../src/output.css">
-    <title>Stop Watch</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <title>STOP WATCH</title>
+  </head>
+  <body>
+    <h1 class="text-center text-blue-500 text-4xl font-bold uppercase mt-10">
+      Stop Watch
+    </h1>
+    <div
+      class="relative w-72 h-72 rounded-full border m-auto mt-10 bg-blue-100 flex flex-col items-center hover:bg-blue-400 hover:shadow-lg transition-all duration-200 ease-in-out shadow-lg"
+    >
+      <div class="flex flex-col gap-20 h-full">
+        <div
+          class="w-30 h-10 bg-white rounded-xl mt-10 flex flex-col justify-center items-center"
+        >
+          <p class="text-2xl text-center font-medium" id="time-show"></p>
+        </div>
+        <div class="flex flex-col gap-4">
+          <div class="w-full flex justify-between">
+            <button
+              class="w-13 bg-blue-600 text-white px-1 py-1 rounded-lg shadow-md hover:bg-blue-700 hover:shadow-lg active:scale-95 transition-all duration-200 ease-in-out text-center " id="btn-start"
+            >
+              Start
+            </button>
+            <button
+              class="w-13 bg-red-600 text-white px-1 py-1 rounded-lg shadow-md hover:bg-red-700 hover:shadow-lg active:scale-95 transition-all duration-200 ease-in-out text-center " id="btn-stop"
+            >
+              Stop
+            </button>
+          </div>
+          <button
+            class="w-full bg-yellow-400 text-center px-1 py-1 text-white rounded-lg shadow-md hover:bg-yellow-500 hover:shadow-lg active:scale-95 transition-all duration-200 ease-in-out " id="btn-reset"
+          >
+            Reset
+          </button>
+        </div>
+      </div>
+      <div
+        class="absolute w-15 h-15 bg-blue-50 rounded-full -top-1 -right-10 flex flex-col justify-center items-center content-center"
+      >
+        <i class="fa-regular fa-clock w-30 text-5xl text-blue-400"></i>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
